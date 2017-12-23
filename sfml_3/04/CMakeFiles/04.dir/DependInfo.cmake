@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/study/project_work/sfml_3/04/main.cpp" "C:/study/project_work/sfml_3/04/CMakeFiles/04.dir/main.cpp.obj"
+  "B:/cpp_practice/project_work/sfml_3/04/main.cpp" "B:/cpp_practice/project_work/sfml_3/04/CMakeFiles/04.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/study/CppDistro/CppDistro/MinGW/include"
+  "B:/cpp_practice/CppDistro/MinGW/include"
   )
 
 # Targets to which this target links.

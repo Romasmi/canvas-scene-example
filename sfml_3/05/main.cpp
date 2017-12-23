@@ -6,7 +6,6 @@ using namespace sf;
 struct Pupil
 {
     ConvexShape body;
-    Vector2f position;
     Vector2f ellipseRadius;
     float rotation;
 };
@@ -40,10 +39,9 @@ void initEye(Eye &eye, float eyeX, float eyeY)
     eye.body.setPointCount(pointCount);
     eye.body.setPosition({eyeX, eyeY});
 
-    eye.pupil.ellipseRadius = {10.f, 12.f};
+    eye.pupil.ellipseRadius = {20.f, 20.f};
     eye.pupil.body.setFillColor(Color(0, 0, 0));
     eye.pupil.body.setPointCount(pointCount);
-    eye.pupil.body.setOrigin(-12.f, 5.f);
     eye.pupil.body.setPosition({eyeX + 5, eyeY + 10});
 
     for (int i = 0; i < pointCount; ++i)
@@ -85,16 +83,37 @@ void pollEvents(sf::RenderWindow &window, sf::Vector2f &mousePosition)
     }
 }
 
-void updateEyeElements(Pupil &pupil)
+Vector2f normilizeVector(Vector2f vector)
 {
-    pupil.body.setRotation(toDegrees(pupil.rotation));
+    float length = std::sqrt(vector.x * vector.x + vector.y * vector.y);
+    return {vector.x / length, vector.y / length};
 }
 
-void update(const sf::Vector2f &mousePosition, Pupil &pupil)
+Vector2f getPupilPositionRadius(Eye &eye, Vector2f direction)
 {
-    const Vector2f delta = mousePosition - pupil.body.getPosition();
-    pupil.rotation = atan2(delta.y, delta.x);
-    updateEyeElements(pupil);
+    float angle = atan2(direction.x, direction.y);
+    Vector2f radius;
+    radius.x = (eye.ellipseRadius.x - eye.pupil.ellipseRadius.x) * sin(angle);
+    radius.y = (eye.ellipseRadius.y - eye.pupil.ellipseRadius.y) * cos(angle);
+    std::cout << radius.x << ", " << radius.y << std::endl;
+    return radius;
+}
+
+void updateEyeElements(Eye &eye, Vector2f cursorDelta)
+{
+    Vector2f cursorDirecton = normilizeVector(cursorDelta);
+    Vector2f pupilPositionRadius = getPupilPositionRadius(eye, cursorDirecton);
+    pupilPositionRadius.x = std::abs(pupilPositionRadius.x) < std::abs(cursorDelta.x) ? pupilPositionRadius.x : cursorDelta.x;
+    pupilPositionRadius.y = std::abs(pupilPositionRadius.y) < std::abs(cursorDelta.y) ? pupilPositionRadius.y : cursorDelta.y;
+
+    Vector2f pupilPositon = eye.body.getPosition() + pupilPositionRadius;
+    eye.pupil.body.setPosition(pupilPositon);
+}
+
+void update(const sf::Vector2f &mousePosition, Eye &eye)
+{
+    const Vector2f delta = mousePosition - eye.body.getPosition();
+    updateEyeElements(eye, delta);
 }
 
 void redrawFrame(sf::RenderWindow &window, Eye &eye1, Eye &eye2)
@@ -125,8 +144,8 @@ int main()
     while (window.isOpen())
     {
         pollEvents(window, mousePosition);
-        update(mousePosition, eye1.pupil);
-        update(mousePosition, eye2.pupil);
+        update(mousePosition, eye1);
+        update(mousePosition, eye2);
         redrawFrame(window, eye1, eye2);
     }
 }

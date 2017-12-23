@@ -1,4 +1,4 @@
-# Install script for directory: B:/cpp_practice/project_work/sfml_3/03
+# Install script for directory: C:/CppDistro/temp/sfml_3/03
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\study\CppDistro\CppDistro\cmake\bin\cmake.exe
+CMAKE_COMMAND = B:\cpp_practice\CppDistro\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\study\CppDistro\CppDistro\cmake\bin\cmake.exe -E remove -f
+RM = B:\cpp_practice\CppDistro\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\study\project_work
+CMAKE_SOURCE_DIR = B:\cpp_practice\project_work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\study\project_work
+CMAKE_BINARY_DIR = B:\cpp_practice\project_work
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = C:\study\project_work
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	C:\study\CppDistro\CppDistro\cmake\bin\cmake-gui.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	B:\cpp_practice\CppDistro\cmake\bin\cmake-gui.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\study\CppDistro\CppDistro\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	B:\cpp_practice\CppDistro\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,14 +79,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\study\project_work && $(CMAKE_COMMAND) -E cmake_progress_start C:\study\project_work\CMakeFiles C:\study\project_work\sfml_3\04\CMakeFiles\progress.marks
-	cd /d C:\study\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\study\project_work\CMakeFiles 0
+	cd /d B:\cpp_practice\project_work && $(CMAKE_COMMAND) -E cmake_progress_start B:\cpp_practice\project_work\CMakeFiles B:\cpp_practice\project_work\sfml_3\04\CMakeFiles\progress.marks
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/all
+	$(CMAKE_COMMAND) -E cmake_progress_start B:\cpp_practice\project_work\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\study\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/clean
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/clean
 .PHONY : clean
 
 # The main clean target
@@ -96,22 +96,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\study\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/preinstall
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\study\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/preinstall
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\study\project_work && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d B:\cpp_practice\project_work && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sfml_3/04/CMakeFiles/04.dir/rule:
-	cd /d C:\study\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/CMakeFiles/04.dir/rule
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f CMakeFiles\Makefile2 sfml_3/04/CMakeFiles/04.dir/rule
 .PHONY : sfml_3/04/CMakeFiles/04.dir/rule
 
 # Convenience name for target.
@@ -121,7 +121,7 @@ sfml_3/04/CMakeFiles/04.dir/rule:
 
 # fast build rule for target.
 04/fast:
-	cd /d C:\study\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/build
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/build
 .PHONY : 04/fast
 
 main.obj: main.cpp.obj
@@ -130,7 +130,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d C:\study\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.obj
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -139,7 +139,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d C:\study\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.i
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -148,7 +148,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d C:\study\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.s
+	cd /d B:\cpp_practice\project_work && $(MAKE) -f sfml_3\04\CMakeFiles\04.dir\build.make sfml_3/04/CMakeFiles/04.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -174,6 +174,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\study\project_work && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d B:\cpp_practice\project_work && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

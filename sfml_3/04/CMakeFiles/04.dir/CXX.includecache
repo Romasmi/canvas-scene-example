@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Config.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Config.hpp
 TargetConditionals.h
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/TargetConditionals.h
+B:/cpp_practice/CppDistro/MinGW/include/SFML/TargetConditionals.h
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics.hpp
 SFML/Window.hpp
 -
 SFML/Graphics/BlendMode.hpp
@@ -64,21 +64,21 @@ SFML/Graphics/VertexArray.hpp
 SFML/Graphics/View.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/BlendMode.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/CircleShape.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/CircleShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Color.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Color.hpp
 SFML/Graphics/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/ConvexShape.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/ConvexShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
@@ -86,17 +86,17 @@ SFML/Graphics/Shape.hpp
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Drawable.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Drawable.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderStates.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Export.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Export.hpp
 SFML/Config.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Font.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Font.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glyph.hpp
@@ -116,7 +116,7 @@ string
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Glsl.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Glsl.hpp
 SFML/Graphics/Transform.hpp
 -
 SFML/Graphics/Color.hpp
@@ -128,15 +128,15 @@ SFML/System/Vector3.hpp
 SFML/Graphics/Glsl.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Glsl.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Glsl.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Glyph.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Glyph.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Image.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Image.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -148,9 +148,9 @@ string
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/PrimitiveType.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/PrimitiveType.hpp
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Rect.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 algorithm
@@ -158,15 +158,15 @@ algorithm
 SFML/Graphics/Rect.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Rect.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Rect.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/RectangleShape.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/RectangleShape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Shape.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/RenderStates.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/RenderStates.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/BlendMode.hpp
@@ -174,7 +174,7 @@ SFML/Graphics/BlendMode.hpp
 SFML/Graphics/Transform.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/RenderTarget.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/RenderTarget.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -196,7 +196,7 @@ SFML/Graphics/Vertex.hpp
 SFML/System/NonCopyable.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/RenderTexture.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/RenderTexture.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Texture.hpp
@@ -204,7 +204,7 @@ SFML/Graphics/Texture.hpp
 SFML/Graphics/RenderTarget.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/RenderWindow.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/RenderWindow.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/RenderTarget.hpp
@@ -216,7 +216,7 @@ SFML/Window/Window.hpp
 string
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Shader.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Shader.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Glsl.hpp
@@ -234,7 +234,7 @@ map
 string
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Shape.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Shape.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -246,7 +246,7 @@ SFML/Graphics/VertexArray.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Sprite.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Sprite.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -258,7 +258,7 @@ SFML/Graphics/Vertex.hpp
 SFML/Graphics/Rect.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Text.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Text.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Drawable.hpp
@@ -278,7 +278,7 @@ string
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Texture.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Texture.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Image.hpp
@@ -286,7 +286,7 @@ SFML/Graphics/Image.hpp
 SFML/Window/GlResource.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Transform.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Transform.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -294,13 +294,13 @@ SFML/Graphics/Rect.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Transformable.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Transformable.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Transform.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/Vertex.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/Vertex.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Color.hpp
@@ -308,7 +308,7 @@ SFML/Graphics/Color.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/VertexArray.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/VertexArray.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Vertex.hpp
@@ -322,7 +322,7 @@ SFML/Graphics/Drawable.hpp
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Graphics/View.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Graphics/View.hpp
 SFML/Graphics/Export.hpp
 -
 SFML/Graphics/Rect.hpp
@@ -332,7 +332,7 @@ SFML/Graphics/Transform.hpp
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System.hpp
 SFML/Config.hpp
 -
 SFML/System/Clock.hpp
@@ -370,23 +370,23 @@ SFML/System/Vector2.hpp
 SFML/System/Vector3.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Clock.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Clock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Err.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Err.hpp
 SFML/System/Export.hpp
 -
 ostream
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Export.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Export.hpp
 SFML/Config.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/FileInputStream.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/FileInputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/Export.hpp
@@ -400,19 +400,19 @@ cstdio
 string
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/InputStream.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/InputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Lock.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Lock.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/MemoryInputStream.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/MemoryInputStream.hpp
 SFML/Config.hpp
 -
 SFML/System/InputStream.hpp
@@ -422,23 +422,23 @@ SFML/System/Export.hpp
 cstdlib
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Mutex.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Mutex.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/NonCopyable.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/NonCopyable.hpp
 SFML/System/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Sleep.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Sleep.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Time.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/String.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/String.hpp
 SFML/System/Export.hpp
 -
 SFML/System/Utf.hpp
@@ -452,9 +452,9 @@ string
 SFML/System/String.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/String.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/String.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Thread.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Thread.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -464,9 +464,9 @@ cstdlib
 SFML/System/Thread.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Thread.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Thread.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/ThreadLocal.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/ThreadLocal.hpp
 SFML/System/Export.hpp
 -
 SFML/System/NonCopyable.hpp
@@ -474,19 +474,19 @@ SFML/System/NonCopyable.hpp
 cstdlib
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/ThreadLocalPtr.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/ThreadLocalPtr.hpp
 SFML/System/ThreadLocal.hpp
 -
 SFML/System/ThreadLocalPtr.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/ThreadLocalPtr.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/ThreadLocalPtr.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Time.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Time.hpp
 SFML/System/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Utf.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Utf.hpp
 SFML/Config.hpp
 -
 algorithm
@@ -500,21 +500,21 @@ cstdlib
 SFML/System/Utf.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Utf.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Utf.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Vector2.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Vector2.hpp
 SFML/System/Vector2.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Vector2.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Vector2.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Vector3.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Vector3.hpp
 SFML/System/Vector3.inl
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/System/Vector3.inl
+B:/cpp_practice/CppDistro/MinGW/include/SFML/System/Vector3.inl
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window.hpp
 SFML/System.hpp
 -
 SFML/Window/Context.hpp
@@ -542,7 +542,7 @@ SFML/Window/WindowHandle.hpp
 SFML/Window/WindowStyle.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Context.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Context.hpp
 SFML/Window/Export.hpp
 -
 SFML/Window/GlResource.hpp
@@ -552,9 +552,9 @@ SFML/Window/ContextSettings.hpp
 SFML/System/NonCopyable.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/ContextSettings.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/ContextSettings.hpp
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Event.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Event.hpp
 SFML/Config.hpp
 -
 SFML/Window/Joystick.hpp
@@ -566,33 +566,33 @@ SFML/Window/Mouse.hpp
 SFML/Window/Sensor.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Export.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Export.hpp
 SFML/Config.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/GlResource.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/GlResource.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/NonCopyable.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Joystick.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Joystick.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/String.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Keyboard.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Keyboard.hpp
 SFML/Window/Export.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Mouse.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Mouse.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Sensor.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Sensor.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector3.hpp
@@ -600,19 +600,19 @@ SFML/System/Vector3.hpp
 SFML/System/Time.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Touch.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Touch.hpp
 SFML/Window/Export.hpp
 -
 SFML/System/Vector2.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/VideoMode.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/VideoMode.hpp
 SFML/Window/Export.hpp
 -
 vector
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/Window.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/Window.hpp
 SFML/Window/Export.hpp
 -
 SFML/Window/ContextSettings.hpp
@@ -634,13 +634,13 @@ SFML/System/NonCopyable.hpp
 SFML/System/String.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/WindowHandle.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/WindowHandle.hpp
 SFML/Config.hpp
 -
 
-C:/study/CppDistro/CppDistro/MinGW/include/SFML/Window/WindowStyle.hpp
+B:/cpp_practice/CppDistro/MinGW/include/SFML/Window/WindowStyle.hpp
 
-C:/study/project_work/sfml_3/04/main.cpp
+B:/cpp_practice/project_work/sfml_3/04/main.cpp
 SFML/Graphics.hpp
 -
 math.h
