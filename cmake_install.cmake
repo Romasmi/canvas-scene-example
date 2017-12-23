@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("B:/cpp_practice/project_work/sfml_3/05/cmake_install.cmake")
+  include("B:/cpp_practice/project_work/workshop_1/02/cmake_install.cmake")
 
 endif()
 

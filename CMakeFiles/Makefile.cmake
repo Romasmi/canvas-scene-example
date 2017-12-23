@@ -38,7 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.9.1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.9.1/CMakeSystem.cmake"
   "CMakeLists.txt"
-  "sfml_3/05/CMakeLists.txt"
+  "workshop_1/02/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -50,10 +50,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "sfml_3/05/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "workshop_1/02/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "sfml_3/05/CMakeFiles/05.dir/DependInfo.cmake"
+  "workshop_1/02/CMakeFiles/02.dir/DependInfo.cmake"
   )

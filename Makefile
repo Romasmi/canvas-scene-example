@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 05
+# Target rules for targets named 02
 
 # Build rule for target.
-05: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 05
-.PHONY : 05
+02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 02
+.PHONY : 02
 
 # fast build rule for target.
-05/fast:
-	$(MAKE) -f sfml_3\05\CMakeFiles\05.dir\build.make sfml_3/05/CMakeFiles/05.dir/build
-.PHONY : 05/fast
+02/fast:
+	$(MAKE) -f workshop_1\02\CMakeFiles\02.dir\build.make workshop_1/02/CMakeFiles/02.dir/build
+.PHONY : 02/fast
 
 # Help Target
 help:
@@ -130,7 +130,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... 05
+	@echo ... 02
 .PHONY : help
 
 

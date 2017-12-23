@@ -8,4 +8,4 @@ find_package(Freetype REQUIRED)
 find_package(JPEG REQUIRED)
 find_package(SFML 2 COMPONENTS window graphics system REQUIRED)
 
-add_subdirectory(sfml_3/05)
+add_subdirectory(workshop_1/02)
