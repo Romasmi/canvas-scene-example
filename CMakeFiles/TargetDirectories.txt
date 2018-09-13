@@ -1,5 +1,0 @@
-B:/cpp_practice/project_work/CMakeFiles/edit_cache.dir
-B:/cpp_practice/project_work/CMakeFiles/rebuild_cache.dir
-B:/cpp_practice/project_work/workshop_1/02/CMakeFiles/rebuild_cache.dir
-B:/cpp_practice/project_work/workshop_1/02/CMakeFiles/02.dir
-B:/cpp_practice/project_work/workshop_1/02/CMakeFiles/edit_cache.dir

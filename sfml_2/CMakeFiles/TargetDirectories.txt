@@ -1,5 +1,0 @@
-C:/study/project_work/sfml.2/CMakeFiles/edit_cache.dir
-C:/study/project_work/sfml.2/CMakeFiles/rebuild_cache.dir
-C:/study/project_work/sfml.2/sfml2.2/CMakeFiles/sfml2.2.dir
-C:/study/project_work/sfml.2/sfml2.2/CMakeFiles/edit_cache.dir
-C:/study/project_work/sfml.2/sfml2.2/CMakeFiles/rebuild_cache.dir
