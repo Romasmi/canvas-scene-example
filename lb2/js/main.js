@@ -14,7 +14,8 @@
 
     const animatedGraphic = new AnimatedGraphic({
         dashboard: dashboard,
-        ctx: ctx
+        ctx: ctx,
+        cloudSpeed: 1
     });
 
     setInterval(function () {
