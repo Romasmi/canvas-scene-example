@@ -203,4 +203,61 @@ class Graphic extends Pen {
             fillColor: params.fillColor
         });
     }
+
+    drawStaticPicture(dashboard)
+    {
+        this.drawSky
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height
+        });
+
+        this.drawFloor
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height
+        });
+
+        this.drawHouse
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height
+        });
+
+        /*draw clouds*/
+        this.drawCloud
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height,
+            x: dashboard.width / 10 * 1,
+            y: 50,
+            viewCoefficient: 0.9
+        });
+
+        this.drawCloud
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height,
+            x: dashboard.width / 10 * 4,
+            y: 50,
+            viewCoefficient: 1.2
+        });
+
+        this.drawCloud
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height,
+            x: dashboard.width / 10 * 9,
+            y: 50,
+            viewCoefficient: 0.5
+        });
+
+        this.drawSun
+        ({
+            dashboardWidth: dashboard.width,
+            dashboardHeight: dashboard.height,
+            x: 0,
+            y: 0,
+        });
+    }
 }
