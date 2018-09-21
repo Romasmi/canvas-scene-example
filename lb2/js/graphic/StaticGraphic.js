@@ -1,6 +1,10 @@
-class Graphic extends Pen {
-    constructor(ctx) {
-        super(ctx);
+class StaticGraphic extends Pen {
+    constructor(options = {}) {
+        super
+        ({
+            ctx: options.ctx
+        });
+        this.dashboard = options.dashboard;
     };
 
     drawCloud(options = {}) {
@@ -23,7 +27,7 @@ class Graphic extends Pen {
                 y3: params.y - params.dashboardHeight * 0.02 * params.viewCoefficient,
                 rX: params.dashboardWidth * 0.07,
                 rY: params.dashboardHeight * 0.05,
-            }
+            };
         this.drawEllipse
         ({
             x: cloudSize.startX,
@@ -54,7 +58,6 @@ class Graphic extends Pen {
             dashboardWidth: 0,
             fillColor: '#3c78d8'
         }, options);
-
 
         this.drawRect
         ({
@@ -104,7 +107,7 @@ class Graphic extends Pen {
                 houseHeight: params.dashboardHeight / 2,
                 houseBodyX: params.dashboardWidth / 2 - params.dashboardWidth / 8,
                 houseBodyY: params.dashboardHeight - params.dashboardHeight / 2 - params.dashboardHeight * 0.05,
-            }
+            };
         this.drawRect
         ({
             x: houseSize.houseBodyX,
@@ -125,7 +128,7 @@ class Graphic extends Pen {
         });
 
         /*house roof*/
-        this.drawTreangle
+        this.drawTriangle
         ({
             x1: houseSize.houseBodyX - houseSize.houseWidth * 0.1,
             y1: houseSize.houseBodyY,
@@ -144,7 +147,7 @@ class Graphic extends Pen {
                 quadrantHeight: houseSize.houseHeight / 4,
                 x: houseSize.houseBodyX + houseSize.houseWidth / 2 - houseSize.houseWidth / 4,
                 y: houseSize.houseBodyY + houseSize.houseHeight / 2 - houseSize.houseHeight / 4,
-            }
+            };
         this.drawRect
         ({
             x: windowSize.x,
@@ -204,58 +207,83 @@ class Graphic extends Pen {
         });
     }
 
-    drawStaticPicture(dashboard)
+    drawStaticPicture(options = {})
     {
+        const params = {};
+        Object.assign(params, {
+            cloud1Size:
+                {
+                    x: this.dashboard.width / 10,
+                    y: this.dashboard.height * 0.1,
+                    viewCoefficient: 0.9,
+                    fillColor: '#cfe2f3'
+                },
+            cloud2Size:
+                {
+                    x: this.dashboard.width / 10 * 4,
+                    y: this.dashboard.height * 0.1,
+                    viewCoefficient: 1.2,
+                    fillColor: '#cfe2f3'
+                },
+            cloud3Size:
+                {
+                    x: this.dashboard.width / 10 * 9,
+                    y: this.dashboard.height * 0.1,
+                    viewCoefficient: 0.7,
+                    fillColor: '#cfe2f3'
+                },
+        }, options);
+
         this.drawSky
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height
         });
 
         this.drawFloor
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height
         });
 
         this.drawHouse
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height
         });
 
         /*draw clouds*/
         this.drawCloud
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height,
-            x: dashboard.width / 10 * 1,
-            y: 50,
-            viewCoefficient: 0.9
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height,
+            x: params.cloud1Size.x,
+            y: params.cloud1Size.y,
+            viewCoefficient: params.cloud1Size.viewCoefficient
         });
 
         this.drawCloud
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height,
-            x: dashboard.width / 10 * 4,
-            y: 50,
-            viewCoefficient: 1.2
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height,
+            x: params.cloud2Size.x,
+            y: params.cloud2Size.y,
+            viewCoefficient: params.cloud2Size.viewCoefficient
         });
 
         this.drawCloud
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height,
-            x: dashboard.width / 10 * 9,
-            y: 50,
-            viewCoefficient: 0.5
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height,
+            x: params.cloud3Size.x,
+            y: params.cloud3Size.y,
+            viewCoefficient: params.cloud3Size.viewCoefficient
         });
 
         this.drawSun
         ({
-            dashboardWidth: dashboard.width,
-            dashboardHeight: dashboard.height,
+            dashboardWidth: this.dashboard.width,
+            dashboardHeight: this.dashboard.height,
             x: 0,
             y: 0,
         });

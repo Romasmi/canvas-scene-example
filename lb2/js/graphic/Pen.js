@@ -26,7 +26,7 @@ class Pen {
 
     };
 
-    drawTreangle(options = {}) {
+    drawTriangle(options = {}) {
         let params = {};
         Object.assign(params, {
             x1: 0,
