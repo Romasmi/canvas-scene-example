@@ -4,41 +4,65 @@
     dashboard.width = dashboard.offsetWidth;
     dashboard.height = dashboard.offsetHeight;
     const ctx = dashboard.getContext('2d');
-    const graphic = new Pen
+    const graphic = new Graphic
     ({
         ctx: ctx
     });
 
-    /*draw sky*/
-    graphic.drawRect
+    graphic.drawSky
     ({
-        x1: 0,
-        y1: 300,
-        width: dashboard.width,
-        height: dashboard.height,
-        fillColor: '#6aa84f'
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height
     });
 
-    /*draw floor*/
-    graphic.drawRect
+    graphic.drawFloor
     ({
-        x1: 0,
-        y1: 0,
-        width: dashboard.width,
-        height: 300,
-        fillColor: '#3c78d8'
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height
     });
 
-    /*draw house body*/
-    graphic.drawRect
+    graphic.drawHouse
     ({
-        x1: 300,
-        y1: 200,
-        width: 200,
-        height: dashboard.height,
-        fillColor: '#bf9000'
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height
     });
 
-    /*draw window*/
-    graphic.drawWindow();
+    /*draw clouds*/
+    graphic.drawCloud
+    ({
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height,
+        x: dashboard.width / 10 * 1,
+        y: 50,
+        viewCoefficient: 0.9
+    });
+
+    graphic.drawCloud
+    ({
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height,
+        x: dashboard.width / 10 * 4,
+        y: 50,
+        viewCoefficient: 1.2
+    });
+
+    graphic.drawCloud
+    ({
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height,
+        x: dashboard.width / 10 * 9,
+        y: 50,
+        viewCoefficient: 0.5
+    });
+
+    graphic.drawSun
+    ({
+        dashboardWidth: dashboard.width,
+        dashboardHeight: dashboard.height,
+        x: 0,
+        y: 0,
+    });
 })();
+
+
+
