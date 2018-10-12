@@ -92,16 +92,19 @@
             )
         };
     redraw(ctx, entity);
+    setInterval(function () {
+        //redraw(ctx, entity);
+    }, 1);
 })();
 
 function redraw(ctx, entity) {
-    drawRectangle(ctx, entity.sky);
-    drawRectangle(ctx, entity.floor);
-    drawHouse(ctx, entity.house);
-    drawCloud(ctx, entity.cloud1);
-    drawCloud(ctx, entity.cloud2);
-    drawCloud(ctx, entity.cloud3);
-    drawSun(ctx, entity.sun);
+    entity.sky.draw(ctx);
+    entity.floor.draw(ctx);
+    entity.house.draw(ctx);
+    entity.cloud1.draw(ctx);
+    entity.cloud2.draw(ctx);
+    entity.cloud3.draw(ctx);
+    entity.sun.draw(ctx);
 }
 
 
