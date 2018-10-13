@@ -91,20 +91,16 @@
                 }
             )
         };
-    redraw(ctx, entity);
-    setInterval(function () {
-        //redraw(ctx, entity);
-    }, 1);
+
+    let scene = new Scene(ctx);
+
+    scene.addObject(entity.sky);
+    scene.addObject(entity.floor);
+    scene.addObject(entity.house);
+    scene.addObject(entity.cloud1);
+    scene.addObject(entity.cloud2);
+    scene.addObject(entity.cloud3);
+    scene.addObject(entity.sun);
+
+    scene.draw();
 })();
-
-function redraw(ctx, entity) {
-    entity.sky.draw(ctx);
-    entity.floor.draw(ctx);
-    entity.house.draw(ctx);
-    entity.cloud1.draw(ctx);
-    entity.cloud2.draw(ctx);
-    entity.cloud3.draw(ctx);
-    entity.sun.draw(ctx);
-}
-
-
