@@ -1,14 +1,12 @@
 class Ellipse {
     constructor({
-                    x,
-                    y,
+                    position,
                     rX,
                     rY,
                     fillColor,
                     rotation
                 }) {
-        this.x = x;
-        this.y = y;
+        this.position = position;
         this.rX = rX;
         this.rY = rY;
         this.fillColor = fillColor;
@@ -22,8 +20,8 @@ class Ellipse {
 
         ctx.beginPath();
         ctx.ellipse(
-            this.x,
-            this.y,
+            this.position.x,
+            this.position.y,
             this.rX,
             this.rY,
             0,

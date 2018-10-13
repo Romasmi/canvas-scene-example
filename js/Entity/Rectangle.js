@@ -1,14 +1,12 @@
 class Rectangle {
     constructor({
-                    x,
-                    y,
+                    position,
                     width,
                     height,
                     fillColor,
                     strokeColor
                 }) {
-        this.x = x;
-        this.y = y;
+        this.position = position;
         this.width = width;
         this.height = height;
         this.fillColor = fillColor;
@@ -21,10 +19,10 @@ class Rectangle {
         }
 
         ctx.fillStyle = this.fillColor;
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
         if (this.strokeColor !== undefined) {
             ctx.strokeColor = this.strokeColor;
-            ctx.strokeRect(this.x, this.y, this.width, this.height);
+            ctx.strokeRect(this.position.x, this.position.y, this.width, this.height);
         }
     }
 }

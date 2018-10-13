@@ -1,20 +1,17 @@
 class Sun {
     constructor({
-                    x,
-                    y,
+        position,
                     radius,
                     fillColor
                 }) {
-        this.x = x;
-        this.y = y;
+        this.position = position;
         this.rX = radius;
         this.rY = radius;
         this.fillColor = fillColor;
 
         this.body = new Ellipse
         ({
-            x: this.x,
-            y: this.y,
+            position: new Vector2D(this.position.x, this.position.y),
             fillColor: this.fillColor,
             rX: this.rX,
             rY: this.rY

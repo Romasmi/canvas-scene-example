@@ -1,7 +1,6 @@
 class House {
     constructor({
-                    bodyX,
-                    bodyY,
+                    position,
                     width,
                     height,
                     bodyColor,
@@ -10,8 +9,7 @@ class House {
                     roofColor,
                     trumpetColor
                 }) {
-        this.bodyX = bodyX;
-        this.bodyY = bodyY;
+        this.position = position;
         this.width = width;
         this.height = height;
         this.bodyColor = bodyColor;
@@ -21,68 +19,58 @@ class House {
         this.trumpetColor = trumpetColor;
 
         this.houseBody = new Rectangle({
-            x: this.bodyX,
-            y: this.bodyY,
+            position: new Vector2D(this.position.x, this.position.y),
             width: this.width,
             height: this.height,
             fillColor: this.bodyColor
         });
 
-        this.trumpet = new Triangle({
-            x: this.bodyX + this.width - this.width * 0.20,
-            y: this.bodyY * 0.9 - this.height * 0.3,
+        this.trumpet = new Rectangle({
+            position: new Vector2D(this.position.x + this.width - this.width * 0.20, this.position.y * 0.9 - this.height * 0.3),
             width: this.width * 0.15,
             height: this.height * 0.3,
             fillColor: this.trumpetColor
         });
 
         this.roof = new Triangle({
-            x1: this.bodyX - this.width * 0.1,
-            y1: this.bodyY,
-            x2: this.bodyX + this.width * 0.5,
-            y2: this.bodyY - this.height * 0.5,
-            x3: this.bodyX + this.width + this.width * 0.1,
-            y3: this.bodyY,
+            position1: new Vector2D(this.position.x - this.width * 0.1, this.position.y),
+            position2: new Vector2D(this.position.x + this.width * 0.5, this.position.y - this.height * 0.5),
+            position3: new Vector2D(this.position.x + this.width + this.width * 0.1, this.position.y),
             fillColor: this.roofColor
         });
 
         this.windowSize =
             {
+                position: new Vector2D(this.position.x + this.width / 2 - this.width / 4, this.position.y + this.height / 2 - this.height / 4),
                 quadrantWidth: this.width / 4,
                 quadrantHeight: this.height / 4,
-                x: this.bodyX + this.width / 2 - this.width / 4,
-                y: this.bodyY + this.height / 2 - this.height / 4,
             };
 
         this.window =
             {
                 quadrant1: new Rectangle({
-                    x: this.windowSize.x,
-                    y: this.windowSize.y,
+                    position: new Vector2D(this.windowSize.position.x, this.windowSize.position.y),
                     width: this.windowSize.quadrantWidth,
                     height: this.windowSize.quadrantHeight,
                     fillColor: this.windowColor,
                     strokeColor: this.windowBorderColor
                 }),
                 quadrant2: new Rectangle({
-                    x: this.windowSize.x + this.windowSize.quadrantWidth,
-                    y: this.windowSize.y,
+                    position: new Vector2D(this.windowSize.position.x + this.windowSize.quadrantWidth, this.windowSize.position.y),
                     width: this.windowSize.quadrantWidth,
                     height: this.windowSize.quadrantHeight,
                     fillColor: this.windowColor,
                     strokeColor: this.windowBorderColor
                 }),
                 quadrant3: new Rectangle({
-                    x: this.windowSize.x,
-                    y: this.windowSize.y + this.windowSize.quadrantHeight,
+                    position: new Vector2D(this.windowSize.position.x, this.windowSize.position.y + this.windowSize.quadrantHeight),
                     width: this.windowSize.quadrantWidth,
                     height: this.windowSize.quadrantHeight,
                     fillColor: this.windowColor,
                     strokeColor: this.windowBorderColor
                 }),
                 quadrant4: new Rectangle({
-                    x: this.windowSize.x + this.windowSize.quadrantWidth,
-                    y: this.windowSize.y + this.windowSize.quadrantHeight,
+                    position: new Vector2D(this.windowSize.position.x + this.windowSize.quadrantWidth, this.windowSize.position.y + this.windowSize.quadrantHeight),
                     width: this.windowSize.quadrantWidth,
                     height: this.windowSize.quadrantHeight,
                     fillColor: this.windowColor,

@@ -8,24 +8,21 @@
         {
             sky: new Rectangle(
                 {
-                    x: 0,
-                    y: 0,
+                    position: new Vector2D(0, 0),
                     width: dashboard.width,
                     height: dashboard.height / 3 * 2,
                     fillColor: '#3c78d8'
                 }),
             floor: new Rectangle(
                 {
-                    x: 0,
-                    y: dashboard.height / 3 * 2,
+                    position: new Vector2D(0, dashboard.height / 3 * 2),
                     width: dashboard.width,
                     height: dashboard.height / 3,
                     fillColor: '#6aa84f'
                 }),
             house: new House(
                 {
-                    bodyX: dashboard.width / 2 - dashboard.width / 8,
-                    bodyY: dashboard.height - dashboard.height / 2 - dashboard.height * 0.05,
+                    position: new Vector2D(dashboard.width / 2 - dashboard.width / 8, dashboard.height - dashboard.height / 2 - dashboard.height * 0.05),
                     width: dashboard.width / 4,
                     height: dashboard.height / 2,
                     bodyColor: '#bf9000',
@@ -36,8 +33,7 @@
                 }),
             cloud1: new Cloud(
                 {
-                    x: dashboard.width * 0.1,
-                    y: dashboard.height * 0.1,
+                    position: new Vector2D(dashboard.width * 0.1, dashboard.height * 0.1),
                     width: dashboard.width * 0.2,
                     height: dashboard.height * 0.2,
                     heightDispersion: 0.05,
@@ -46,8 +42,7 @@
                 }),
             cloud2: new Cloud(
                 {
-                    x: dashboard.width * 0.4,
-                    y: dashboard.height * 0.1,
+                    position: new Vector2D(dashboard.width * 0.4, dashboard.height * 0.1),
                     width: dashboard.width * 0.2,
                     height: dashboard.height * 0.2,
                     heightDispersion: 0.05,
@@ -56,8 +51,7 @@
                 }),
             cloud3: new Cloud(
                 {
-                    x: dashboard.width * 0.7,
-                    y: dashboard.height * 0.1,
+                    position: new Vector2D(dashboard.width * 0.7, dashboard.height * 0.1),
                     width: dashboard.width * 0.2,
                     height: dashboard.height * 0.2,
                     heightDispersion: 0.05,
@@ -67,8 +61,7 @@
             sun: new Sun
             (
                 {
-                    x: -5,
-                    y: -5,
+                    position: new Vector2D(-5, -5),
                     radius: dashboard.height * 0.15,
                     fillColor: '#ffbb00'
                 }
