@@ -21,4 +21,9 @@ class Sun {
     draw(ctx) {
         this.body.draw(ctx);
     }
+
+    update(deltaTime)
+    {
+        
+    }
 }

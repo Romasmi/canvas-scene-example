@@ -78,5 +78,19 @@
     scene.addObject(entity.cloud3);
     scene.addObject(entity.sun);
 
-    scene.draw();
+    let lastTimestamp = Date.now();
+    const animateFn = () => {
+        const currentTimeStamp = Date.now();
+        const deltaTime = (currentTimeStamp - lastTimestamp) * 0.001; //сколько секунд прошло с прошлого кадра
+        lastTimestamp = currentTimeStamp;
+
+        scene.update(deltaTime);
+        scene.draw();
+
+        requestAnimationFrame(animateFn);
+    }
+
+    animateFn();
 })();
+
+

@@ -3,6 +3,7 @@ class Scene {
     {
         this.ctx = ctx;
         this.objects = [];
+        this.a = 1;
     }
 
     addObject(object)
@@ -19,6 +20,16 @@ class Scene {
     {
         this.objects.forEach( object => {
             object.draw(this.ctx);
+        });
+    }
+
+    update(deltaTime)
+    {
+        this.objects.forEach( object => {
+            if (object.update)
+            {
+                object.update(deltaTime);
+            }
         });
     }
 }
