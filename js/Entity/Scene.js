@@ -23,12 +23,12 @@ class Scene {
         });
     }
 
-    update(deltaTime)
+    update(options)
     {
         this.objects.forEach( object => {
             if (object.update)
             {
-                object.update(deltaTime);
+                object.update(options);
             }
         });
     }
