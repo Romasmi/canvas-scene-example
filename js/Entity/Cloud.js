@@ -85,10 +85,7 @@ class Cloud {
                 this.position.x = options.container.width + this.rX;
             }
         }
-
         this.position.y += getYByXInSinusoid(this.position.x, this.sinStretchingX, this.sinStretchingY);
-        console.log(getYByXInSinusoid(this.position.x, this.sinStretchingX, this.sinStretchingY));
-
         this.reCalc();
     };
 }

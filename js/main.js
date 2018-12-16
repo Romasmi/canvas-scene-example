@@ -42,8 +42,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: -300,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
                 }),
             cloud2: new Cloud(
                 {
@@ -54,8 +54,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: 120,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
                 }),
             cloud3: new Cloud(
                 {
@@ -66,8 +66,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: 400,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
                 }),
             sun: new Sun
             (

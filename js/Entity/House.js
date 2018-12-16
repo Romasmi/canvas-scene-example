@@ -46,6 +46,10 @@ class House {
                 quadrantHeight: this.height / 4,
             };
 
+        this.setWindow();
+    }
+
+    setWindow() {
         this.window =
             {
                 quadrant1: new Rectangle({
@@ -87,5 +91,40 @@ class House {
         this.window.quadrant2.draw(ctx);
         this.window.quadrant3.draw(ctx);
         this.window.quadrant4.draw(ctx);
+    }
+
+    update(options) {
+        if (options.timeInHour > config.endTimeForMorningLight && options.timeInHour < config.beginTimeForEveningLight) {
+            const lightness = generateLightnessByMiddleTime
+            ({
+                beginTime: config.endTimeForMorningLight,
+                endTime: config.beginTimeForEveningLight,
+                minLightness: 0,
+                maxLightness: 70,
+                currentTime: options.timeInHour
+            });
+            this.windowColor = hslColor(196, 76, lightness);
+        } else if (options.timeInHour <= config.endTimeForMorningLight) {
+            const lightness = generateLightnessByMiddleTime
+            ({
+                beginTime: 0,
+                endTime: config.endTimeForMorningLight,
+                minLightness: 0,
+                maxLightness: 50,
+                currentTime: options.timeInHour
+            });
+            this.windowColor = hslColor(54, 76, lightness);
+        } else if (options.timeInHour >= config.beginTimeForEveningLight) {
+            const lightness = generateLightnessByMiddleTime
+            ({
+                beginTime: config.beginTimeForEveningLight,
+                endTime: config.hoursInDay,
+                minLightness: 0,
+                maxLightness: 50,
+                currentTime: options.timeInHour
+            });
+            this.windowColor = hslColor(54, 76, lightness);
+        }
+        this.setWindow();
     }
 }
