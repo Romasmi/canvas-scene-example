@@ -11,6 +11,7 @@ class Cloud {
                     sinStretchingX
                 }) {
         this.position = position;
+        this.stopped = false;
 
         this.y1Dispersion = this.position.y * heightDispersion * Math.round(Math.random() * 2 - 1);
         this.y2Dispersion = this.position.y * heightDispersion * Math.round(Math.random() * 2 - 1);
@@ -29,6 +30,8 @@ class Cloud {
 
         this.sinStretchingY = sinStretchingY;
         this.sinStretchingX = sinStretchingX;
+
+        this.startPosition = this.position;
 
         this.part =
             {
@@ -85,7 +88,22 @@ class Cloud {
                 this.position.x = options.container.width + this.rX;
             }
         }
-        this.position.y += getYByXInSinusoid(this.position.x, this.sinStretchingX, this.sinStretchingY);
+
+
+        this.position.y = this.startPosition.y + getYByXInSinusoid(this.position.x, this.sinStretchingX, this.sinStretchingY);
         this.reCalc();
     };
+
+    processKeyMap(keyMap)
+    {
+        if (keyMap.isPressed(config.keyCode.UP_ARROW))
+        {
+            this.speed += config.speedStep;
+        }
+
+        if (keyMap.isPressed(config.keyCode.DOWN_ARROW))
+        {
+            this.speed -= config.speedStep;
+        }
+    }
 }

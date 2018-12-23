@@ -5,7 +5,6 @@
     const ctx = dashboard.getContext('2d');
 
     let currentTimeInHour = 0;
-    let speedPxPerSecond = 100;
     let entity =
         {
             sky: new Sky(
@@ -15,12 +14,12 @@
                     height: dashboard.height / 3 * 2,
                     fillColor: hslColor(203, 98, 45)
                 }),
-            floor: new Rectangle(
+            floor: new Floor(
                 {
                     position: new Vector2D(0, dashboard.height / 3 * 2),
                     width: dashboard.width,
                     height: dashboard.height / 3,
-                    fillColor: '#6aa84f'
+                    fillColor: hslColor(129, 39, 50)
                 }),
             house: new House(
                 {
@@ -42,8 +41,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: -300,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
                 }),
             cloud2: new Cloud(
                 {
@@ -54,8 +53,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: 120,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
                 }),
             cloud3: new Cloud(
                 {
@@ -66,8 +65,8 @@
                     widthDispersion: 0.7,
                     fillColor: '#cfe2f3',
                     speed: 400,
-                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient % dashboard.height * 0.2,
-                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient % dashboard.height * 0.2,
+                    sinStretchingY: Math.random() * dashboard.height * config.cloudsYStretchingCoefficient,
+                    sinStretchingX: Math.random() * dashboard.width * config.cloudsXStretchingCoefficient,
                 }),
             sun: new Sun
             (
@@ -81,6 +80,7 @@
         };
 
     let scene = new Scene(ctx);
+    let keyMap = new KeyMap(document);
 
     scene.addObject(entity.sky);
     scene.addObject(entity.floor);
@@ -93,10 +93,12 @@
     let lastTimestamp = Date.now();
     const animateFn = () => {
         const currentTimeStamp = Date.now();
-        const deltaTime = (currentTimeStamp - lastTimestamp) * 0.001;
+        const deltaTime = (currentTimeStamp - lastTimestamp) / config.millisecondsInSecond;
+
         lastTimestamp = currentTimeStamp;
         currentTimeInHour = getUpdatedTime(currentTimeInHour);
 
+        scene.processKeyMap(keyMap);
         scene.update
         (
             {

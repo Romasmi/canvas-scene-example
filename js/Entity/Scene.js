@@ -1,35 +1,47 @@
 class Scene {
-    constructor(ctx)
-    {
+    constructor(ctx) {
         this.ctx = ctx;
         this.objects = [];
-        this.a = 1;
+        this.stopped = false;
     }
 
-    addObject(object)
-    {
-        if (object === undefined)
-        {
+    addObject(object) {
+        if (object === undefined) {
             return false;
         }
 
         this.objects.push(object);
     }
 
-    draw()
-    {
-        this.objects.forEach( object => {
+    draw() {
+        this.objects.forEach(object => {
             object.draw(this.ctx);
         });
     }
 
-    update(options)
-    {
-        this.objects.forEach( object => {
-            if (object.update)
-            {
-                object.update(options);
+    update(options) {
+        if (!this.stopped) {
+            this.objects.forEach(object => {
+                if (object.update) {
+                    object.update(options);
+                }
+            });
+        }
+    }
+
+    processKeyMap(keyMap) {
+        this.objects.forEach(object => {
+            if (object.processKeyMap) {
+                object.processKeyMap(keyMap);
             }
         });
+
+        if (keyMap.isPressed(config.keyCode.SPACE)) {
+            if (this.stopped) {
+                this.stopped = false;
+            } else {
+                this.stopped = true;
+            }
+        }
     }
 }

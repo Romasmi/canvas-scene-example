@@ -59,6 +59,5 @@ function generateLightnessByMiddleTime(options) {
             distanceBetweenLightness +
             options.minLightness
     }
-    console.log(options);
     return lightness;
 }
